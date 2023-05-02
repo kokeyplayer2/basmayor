@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Adrian PORTFOLIO</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">Adrian <span>PORTFOLIO</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#firewall">Firewall</a></li>
+                <li><a href="#sophos">Sophos</a></li>
+                <li><a href="#ransomware">Ransomware</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="content">
+            <h2>WELCOME TO MY PORTFOLIO</h2>
+            <p>Im Adrian Basmayor, BSIT 2A1</p>
+        </div>
+        <div class="content2">
+            <div class="picture">
+                <img src="bas-pf.jpg" alt="Adrian">
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="fw" id="firewall">
+        <div class="fw-header">
+            <h3>Firewall</h3>
+        </div>
+        <div class="fw-content">
+            <h5>Firewall configuration steps can vary depending on the specific firewall product you are using. However, here are some general steps to follow when configuring a firewall:</h5>
+        </div>
+        <div class="fw-content2">
+            <p>    <span>1. Secure your firewall:</span>  If an attacker is able to gain administrative access to your firewall it is “game over” for your network security. Therefore, securing your firewall is the first and most important step of this process  Never put a firewall into production that is not properly secured by at least the following configuration actions:
+
+                Update your firewall to the latest firmware.
+                
+                Delete, disable, or rename any default user accounts and change all default passwords. Make sure to use only complex and secure passwords.
+                If multiple administrators will manage the firewall, create additional administrator accounts with limited privileges based on responsibilities. Never use shared user accounts.
+                Disable simple network management protocol (SNMP) or configure it to use a secure community string. <br>
+                <br> <span>2. Architect your firewall zones and IP addresses:</span> To protect your network's important assets, you must first define what the assets are (for example, payment card data or patient data). Then design your network structure so that these assets can be grouped together and assigned to networks (or zones) based on sensitivity level and function.  
+
+                For example, all of your servers that provide internet-based services (web servers, email servers, virtual private network (VPN) servers, and so on) should be housed in a dedicated zone that allows only limited inbound traffic from the internet (this zone is sometimes referred to as a demilitarized zone or DMZ). Database servers, for example, should not be accessed directly from the internet and should instead be put in internal server zones. Similarly, workstations Internal network zones are typically used for point-of-sale devices and voice over Internet protocol (VOIP) systems. 
+
+                In general, the more zones you build, the more secure your network will be. However, keep in mind that managing more zones takes more time and resources, so be cautious when deciding how many network zones to use.
+                Internal IP addresses should be used for all internal networks if you are utilizing IP version 4. When necessary, network address translation (NAT) must be established to allow internal devices to communicate on the Internet.
+                You're ready to construct firewall zones and assign them to your network once you've built your network zone structure and established the relevant IP address scheme Firewall interfaces are sometimes known as subinterfaces. Switches that support virtual LANs (VLANs) should be used to ensure level-2 separation between networks as you build up your network infrastructure.<br>
+    
+                <br> <span>3. Configure access control lists:</span> Now that you have established your network zones and assigned them to interfaces, you should determine exactly which traffic needs to be able to flow into and out of each zone.
+
+                This traffic will be permitted using firewall rules called access control lists (ACLs), which are applied to each interface or subinterface on the firewall. Make your ACLs specific to the exact source and/or destination IP addresses and port numbers whenever possible. At the end of every access control list, make sure there is a “deny all” rule to filter out all unapproved traffic. Apply both inbound and outbound ACLs to each interface and subinterface on your firewall so that only approved traffic is allowed into and out of each zone.
+                
+                Whenever possible, it is generally advised to disable your firewall administration interfaces (including both secure shell (SSH) and web interfaces) from public access. This will help to protect your firewall configuration from outside threats. Make sure to disable all unencrypted protocols for firewall management, including Telnet and HTTP connections. <br>   
+    
+                <br> <span>4. Configure your other firewall services and logging:</span> If your firewall is also capable of acting as a dynamic host configuration protocol (DHCP) server, network time protocol (NTP) server, intrusion prevention system (IPS), etc., then go ahead and configure the services you wish to use. Disable all the extra services that you don’t intend to use. 
+
+                To fulfill PCI DSS requirements, configure your firewall to report to your logging server, and make sure that enough detail is included to satisfy requirement 10.2 through 10.3 of the PCI DSS. <br>
+    
+                <br> <span>5. Test your firewall configuration:</span> In a test environment, verify that your firewall works as intended. Don’t forget to verify that your firewall is blocking traffic that should be blocked according to your ACL configurations.  Testing your firewall should include both vulnerability scanning and penetration testing.
+
+                Once you have finished testing your firewall, your firewall should be ready for production. Always remember to keep a backup of your firewall configuration saved in a secure place so that all of your hard work is not lost in the event of a hardware failure.
+                
+                Remember, this is just an overview to help you understand the major steps of firewall configuration. When using tutorials, or even if you decide to configure your own firewall, be sure to have a security expert review your configuration to make sure it is set up to keep your data as safe as possible. <br>   
+                
+                </p>
+        </div>
+    </div>
+
+
+    <div class="sophos" id="sophos">
+        <div class="s-header">
+            <h3>Sophos</h3>
+        </div>
+        <div class="s-box">
+            <h5>
+                Sophos is a cybersecurity company that offers a range of security solutions for businesses and organizations. Some possible topics related to Sophos include:</h5>
+        </div>
+        <div class="s-content">
+            <br> <span>1. Sophos cybersecurity products and services:</span> Sophos offers a wide range of cybersecurity products and services, including firewalls, endpoint protection, mobile security, email security, and more. You could explore the features and benefits of these products and how they help businesses protect their networks and data. <br>   
+
+            <br> <span>2. Sophos security research and threat intelligence: </span>Sophos has a dedicated team of security researchers who analyze the latest threats and vulnerabilities in order to provide timely and accurate threat intelligence. You could look at some of the recent research reports and analyses published by Sophos and discuss their implications for the cybersecurity landscape.<br>
+
+            <br> <span>3. Sophos best practices for cybersecurity:</span> Sophos provides guidance on best practices for cybersecurity, including tips for securing networks, protecting against ransomware, and implementing strong password policies. You could examine some of these best practices and discuss how businesses can implement them effectively. <br>
+
+            <br> <span>4. Sophos and the cybersecurity industry: </span> Sophos is one of the leading companies in the cybersecurity industry. You could explore the company's history, its position within the industry, and its contributions to the development of new cybersecurity technologies and practices.<br> 
+
+            <br> <span>5. Sophos and the future of cybersecurity: </span> As the cybersecurity landscape continues to evolve, Sophos is likely to play an important role in shaping the future of cybersecurity. You could speculate on what the future of cybersecurity might look like and how companies like Sophos will need to adapt to stay ahead of the curve. <br>
+
+        </div> 
+    </div>
+
+    
+    <div class="ransomware" id="ransomware">
+        <div class="r-header">
+            <h3>Ransomware</h3>
+        </div>
+        <div class="r-box">
+            <h5>
+                Ransomware is a type of malicious software that is used by cybercriminals to encrypt a victim's files or data and demand a ransom payment in exchange for the decryption key. Some possible topics related to ransomware include:
+            </h5>
+        </div>
+        <div class="r-content">
+            <br> <span>1. Types of ransomware::</span>Ransomware can take many forms, including encryption ransomware, lock screen ransomware, and mobile ransomware. You could explore the different types of ransomware and how they work. <br>   
+
+            <br> <span>2. Common ransomware attacks:  </span> There have been several high-profile ransomware attacks in recent years, including the WannaCry attack and the Colonial Pipeline attack. You could examine some of the most common ransomware attacks and how they have impacted individuals and organizations.<br>
+
+            <br> <span>3. Ransomware prevention and mitigation:</span>Preventing ransomware attacks is crucial for individuals and organizations alike. You could look at some of the best practices for preventing ransomware, such as keeping software up to date and using strong passwords, as well as strategies for mitigating the damage caused by a ransomware attack. <br>
+
+            <br> <span>4. Ransomware payment: </span> Paying the ransom demanded by ransomware attackers is a controversial issue, with some experts arguing that it only encourages further attacks. You could discuss the pros and cons of paying a ransom and examine the ethical and legal implications of doing so. <br> 
+
+            <br> <span>5. Future of ransomware: </span> Ransomware attacks are likely to continue to be a major threat in the future. You could speculate on how ransomware attacks might evolve and what new technologies or strategies might be used to prevent and mitigate these attacks. <br>
+
+            
+        </div> 
+    </div>
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="social-media">
+                <a href="https://www.facebook.com/kokeyplayer2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/theadiiwaps?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Kokeyplayer2"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@basmayoradrian1795"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <label>Copyright &copy; 2023</label>
+            </div>
+            <div class="brand">
+                <label>Adrian Basmayor <span>PortFolio</span></label>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
